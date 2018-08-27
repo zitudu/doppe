@@ -2,12 +2,14 @@ extern crate clap;
 
 mod command;
 
+mod bind;
+
 use clap::App;
 use command::Command;
 use std::iter::Iterator;
 
 fn main() {
-    let sub_commands: Vec<Box<Command>> = vec![];
+    let sub_commands: Vec<Box<Command>> = vec![Box::new(bind::Bind {})];
     let matches = App::new("doppe")
         .version("0.1.0")
         .author("zitudu <zitudu@protonmail.com>")
