@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["zitudu <zitudu@protonmail.com>"]
 
 [dependencies]
-clap = "^2.32.0"
+clap = "~2.32.0"
